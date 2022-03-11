@@ -144,19 +144,19 @@ const showPosts = (posts) => {
 
 const displayLikedPosts = () => {
   const likedPosts = getLikedPosts();
-  document.getElementById('liked').innerHTML = ``;
+  document.getElementById('like-post').innerText = ``;
   likedPosts.forEach((post) => {
     const div = createPost(post);
-    document.getElementById("liked").appendChild(div);
+    document.getElementById("like-post").appendChild(div);
   });
 };
 
 const displayReportedPosts = () => {
   const reportedPosts = getReportedPosts();
-  document.getElementById('reported').innerHTML = ``;
+  document.getElementById('reported-post').innerText = ``;
   reportedPosts.forEach((post) => {
     const div = createPost(post);
-    document.getElementById("reported").appendChild(div);
+    document.getElementById("reported-post").appendChild(div);
   });
 };
 
